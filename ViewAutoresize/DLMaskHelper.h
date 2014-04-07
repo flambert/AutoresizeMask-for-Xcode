@@ -11,7 +11,7 @@
 
 @interface DLMaskHelper : NSObject
 
-@property (retain) DLMaskView *maskView;
-@property (retain) DLSpringsStrutsView *sizingView;
+@property (nonatomic) DLMaskView *maskView;
+@property (nonatomic) DLSpringsStrutsView *sizingView;
 
 @end

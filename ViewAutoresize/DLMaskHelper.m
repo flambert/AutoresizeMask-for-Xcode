@@ -54,7 +54,6 @@ static NSString *const kDLShowSizingsPreferencesKey = @"kDLShowSizingsPreference
         [newMenuItem setTarget:self];
         [newMenuItem setKeyEquivalentModifierMask:NSAlternateKeyMask];
         [[editMenuItem submenu] addItem:newMenuItem];
-        [newMenuItem release];
     }
 }
 
@@ -154,21 +153,16 @@ static NSString *const kDLShowSizingsPreferencesKey = @"kDLShowSizingsPreference
 
 - (DLMaskView *)maskView {
     if (!_maskView) {
-        self.maskView = [[[DLMaskView alloc] initWithFrame:NSZeroRect] autorelease];
+        self.maskView = [[DLMaskView alloc] initWithFrame:NSZeroRect];
     }
     return _maskView;
 }
 
 - (DLSpringsStrutsView *)sizingView {
     if (!_sizingView) {
-        self.sizingView = [[[DLSpringsStrutsView alloc] initWithFrame:NSZeroRect] autorelease];
+        self.sizingView = [[DLSpringsStrutsView alloc] initWithFrame:NSZeroRect];
     }
     return _sizingView;
 }
 
-- (void)dealloc {
-    self.sizingView = nil;
-    self.maskView = nil;
-    [super dealloc];
-}
 @end

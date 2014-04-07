@@ -137,7 +137,7 @@
 		1D97E6541687685100468E02 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Denis Lebedev";
 			};
 			buildConfigurationList = 1D97E6571687685100468E02 /* Build configuration list for PBXProject "DLAutoresizeMaskPlugin" */;
@@ -197,7 +197,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -226,7 +225,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -247,10 +245,11 @@
 		1D97E6701687685100468E02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "${HOME}";
-				GCC_ENABLE_OBJC_GC = supported;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewAutoresize/DLAutoresizeMaskPlugin-Prefix.pch";
@@ -264,10 +263,11 @@
 		1D97E6711687685100468E02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "${HOME}";
-				GCC_ENABLE_OBJC_GC = supported;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewAutoresize/DLAutoresizeMaskPlugin-Prefix.pch";

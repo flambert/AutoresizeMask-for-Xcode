@@ -11,6 +11,6 @@
 
 @interface DLSpringsStrutsView : NSView
 
-@property (assign) UIViewAutoresizing mask;
+@property (nonatomic) UIViewAutoresizing mask;
 
 @end
